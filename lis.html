@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Marketplace</h1>
+    <p id="welcome"></p>
+    <button id="logout">Sair</button>
+  </header>
+
+  <main>
+    <!-- Formulário de produto -->
+    <section id="form-section">
+      <h2>Publicar Produto</h2>
+      <form id="product-form">
+        <input type="text" id="title" placeholder="Título do produto" required>
+        <input type="number" id="price" placeholder="Preço (USD)" required>
+        <textarea id="description" placeholder="Descrição"></textarea>
+        <input type="file" id="image" accept="image/*">
+        <button type="submit">Adicionar Produto</button>
+      </form>
+    </section>
+
+    <!-- Lista de produtos -->
+    <section id="products-section">
+      <h2>Produtos</h2>
+      <div id="products-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos podem ver todos os produtos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
